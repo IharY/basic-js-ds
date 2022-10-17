@@ -14,6 +14,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
 class Queue {
+  constructor(){
+    this.queue = [];
+  }
 
   getUnderlyingList() {
     throw new NotImplementedError('Not implemented');
